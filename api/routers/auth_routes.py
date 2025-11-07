@@ -99,7 +99,5 @@ async def login(data: LoginData, db: AsyncSession = Depends(get_db)):
 
     
     
-        
-
 
 

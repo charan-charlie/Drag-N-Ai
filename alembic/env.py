@@ -75,7 +75,9 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from database import Base
 from models import user
-from models import query   # import all tables models from the model folder which inherits from the base 
+from models import query
+from models import linkedin_profile
+from models import user_linkedin_profile
 config = context.config
 fileConfig(config.config_file_name)
 target_metadata = Base.metadata

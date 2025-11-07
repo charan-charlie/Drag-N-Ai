@@ -6,13 +6,20 @@ from models.query import UserQuery
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 from logger import get_logger
-
-import httpx
-import json
+from services.llm import call_llm
+from pydantic import BaseModel
+from typing import Any
 
 router = APIRouter()
 
-api_key = "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"
+class LLMResponse(BaseModel):
+    """Pydantic model for LLM response"""
+    content: Any = None
+    answer: Any = None
+    
+    class Config:
+        extra = "allow"  # Allow additional fields
+
 @router.post("/query")  # POST since you receive JSON body
 async def ask_me(request: Request, db: AsyncSession = Depends(get_db)):
 
@@ -47,40 +54,26 @@ async def ask_me(request: Request, db: AsyncSession = Depends(get_db)):
     if not question:
         raise HTTPException(status_code=400, detail="Question field is required")
 
-    url = "https://openrouter.ai/api/v1/chat/completions"
-    headers = {
-        "Authorization": f"Bearer {api_key}",
-        "Content-Type": "application/json"
-    }
-    payload = {
-        "model": "mistralai/mistral-7b-instruct",
-        "messages": [{"role": "user", "content": question}],
-        "temperature": 0.2,
-        "max_tokens": 256
-    }
+    try:
+        # Call LLM function with system message and prompt
+        system_message = ""  # You can customize this if needed
+        parsed_content = await call_llm(
+            system_message=system_message,
+            prompt=question,
+            response_model=LLMResponse
+        )
 
-    async with httpx.AsyncClient() as client:
-        try:
-            response = await client.post(url, headers=headers, json=payload)
-            response.raise_for_status()
-            response_data = response.json()
+        # Increment count after successful API call
+        user_query.count += 1
+        your_cuurent_count = user_query.count
+        await db.commit()
+        await db.refresh(user_query)
 
-            content = response_data['choices'][0]['message']['content'].strip()
+        return {
+            "Answer": parsed_content,
+            "your_current_queries_number": your_cuurent_count,
+            "Remaining queries": 20 - your_cuurent_count
+        }
 
-            try:
-                parsed_content = json.loads(content)
-            except json.JSONDecodeError:
-                parsed_content = content
-
-            # Increment count after successful API call
-            user_query.count += 1
-            your_cuurent_count  = user_query.count
-            await db.commit()
-            await db.refresh(user_query)
-
-            return {"Answer": parsed_content, "your_current_queries_number": your_cuurent_count, "Remaining queries" : 20 - your_cuurent_count}
-
-        except httpx.HTTPStatusError as http_err:
-            raise HTTPException(status_code=response.status_code, detail=f"HTTP error: {http_err}")
-        except Exception as e:
-            raise HTTPException(status_code=500, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))

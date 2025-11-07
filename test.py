@@ -1,5 +1,3 @@
-
-
 from supabaseclient import supabase, supabase_public
 
 

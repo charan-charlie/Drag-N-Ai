@@ -1965,3 +1965,586 @@ WHERE users.email = $1::VARCHAR
 2025-08-11 21:25:08,265 - INFO - httpx - HTTP Request: POST https://icbdueedouzebvmjrpzm.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
 2025-08-11 21:25:08,271 - INFO - auth router - User has been been authenticated
 2025-08-11 21:25:08,273 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-11-07 15:44:37,118 - INFO - Main - Middlewares added
+2025-11-07 15:44:37,122 - INFO - Main - Routers added
+2025-11-07 15:45:54,498 - INFO - Main - Middlewares added
+2025-11-07 15:45:54,510 - INFO - Main - Routers added
+2025-11-07 15:54:30,763 - INFO - Main - Middlewares added
+2025-11-07 15:54:30,781 - INFO - Main - Routers added
+2025-11-07 15:55:37,340 - INFO - MiddleWare - Middleware triggered for DELETE http://127.0.0.1:8000/all_users
+2025-11-07 15:55:45,438 - INFO - MiddleWare - Middleware triggered for GET http://127.0.0.1:8000/all_users
+2025-11-07 15:55:45,736 - INFO - user router - Enter into get users end point
+2025-11-07 15:55:47,749 - INFO - sqlalchemy.engine.Engine - select pg_catalog.version()
+2025-11-07 15:55:47,750 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 15:55:48,068 - INFO - sqlalchemy.engine.Engine - select current_schema()
+2025-11-07 15:55:48,073 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 15:55:48,472 - INFO - sqlalchemy.engine.Engine - show standard_conforming_strings
+2025-11-07 15:55:48,472 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 15:55:48,714 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 15:55:48,723 - INFO - sqlalchemy.engine.Engine - SELECT users.id, users.name, users.email, users.age 
+FROM users
+2025-11-07 15:55:48,724 - INFO - sqlalchemy.engine.Engine - [generated in 0.00115s] ()
+2025-11-07 15:55:49,012 - INFO - user router - Users has been been fetched
+2025-11-07 15:55:49,016 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-11-07 15:58:04,412 - INFO - Main - Middlewares added
+2025-11-07 15:58:04,425 - INFO - Main - Routers added
+2025-11-07 16:12:24,747 - INFO - Main - Middlewares added
+2025-11-07 16:12:24,754 - INFO - Main - Routers added
+2025-11-07 16:12:38,356 - INFO - Main - Middlewares added
+2025-11-07 16:12:38,368 - INFO - Main - Routers added
+2025-11-07 16:13:01,134 - INFO - Main - Middlewares added
+2025-11-07 16:13:01,145 - INFO - Main - Routers added
+2025-11-07 16:13:15,261 - INFO - Main - Middlewares added
+2025-11-07 16:13:15,271 - INFO - Main - Routers added
+2025-11-07 16:13:30,050 - INFO - Main - Middlewares added
+2025-11-07 16:13:30,059 - INFO - Main - Routers added
+2025-11-07 16:19:00,443 - INFO - Main - Middlewares added
+2025-11-07 16:19:00,472 - INFO - Main - Routers added
+2025-11-07 16:19:13,776 - INFO - Main - Middlewares added
+2025-11-07 16:19:13,787 - INFO - Main - Routers added
+2025-11-07 16:19:33,762 - INFO - Main - Middlewares added
+2025-11-07 16:19:33,780 - INFO - Main - Routers added
+2025-11-07 16:19:39,385 - INFO - Main - Middlewares added
+2025-11-07 16:19:39,396 - INFO - Main - Routers added
+2025-11-07 16:21:02,619 - INFO - Main - Middlewares added
+2025-11-07 16:21:02,689 - INFO - Main - Routers added
+2025-11-07 16:21:39,034 - INFO - Main - Middlewares added
+2025-11-07 16:21:39,082 - INFO - Main - Routers added
+2025-11-07 16:21:49,513 - INFO - Main - Middlewares added
+2025-11-07 16:21:49,548 - INFO - Main - Routers added
+2025-11-07 16:21:55,758 - INFO - Main - Middlewares added
+2025-11-07 16:21:55,766 - INFO - Main - Routers added
+2025-11-07 16:25:50,668 - INFO - Main - Middlewares added
+2025-11-07 16:25:50,675 - INFO - Main - Routers added
+2025-11-07 16:54:19,315 - INFO - Main - Middlewares added
+2025-11-07 16:54:19,332 - INFO - Main - Routers added
+2025-11-07 16:54:40,300 - INFO - Main - Middlewares added
+2025-11-07 16:54:40,336 - INFO - Main - Routers added
+2025-11-07 16:55:00,911 - INFO - Main - Middlewares added
+2025-11-07 16:55:00,961 - INFO - Main - Routers added
+2025-11-07 16:55:06,158 - INFO - Main - Middlewares added
+2025-11-07 16:55:06,173 - INFO - Main - Routers added
+2025-11-07 16:55:39,531 - INFO - Main - Middlewares added
+2025-11-07 16:55:39,615 - INFO - Main - Routers added
+2025-11-07 16:55:46,411 - INFO - Main - Middlewares added
+2025-11-07 16:55:46,429 - INFO - Main - Routers added
+2025-11-07 16:55:59,916 - INFO - Main - Middlewares added
+2025-11-07 16:55:59,924 - INFO - Main - Routers added
+2025-11-07 16:56:13,724 - INFO - Main - Middlewares added
+2025-11-07 16:56:13,729 - INFO - Main - Routers added
+2025-11-07 16:57:40,521 - INFO - Main - Middlewares added
+2025-11-07 16:57:40,527 - INFO - Main - Routers added
+2025-11-07 16:57:45,596 - INFO - Main - Middlewares added
+2025-11-07 16:57:45,603 - INFO - Main - Routers added
+2025-11-07 16:57:53,480 - INFO - Main - Middlewares added
+2025-11-07 16:57:53,503 - INFO - Main - Routers added
+2025-11-07 16:57:59,721 - INFO - Main - Middlewares added
+2025-11-07 16:57:59,729 - INFO - Main - Routers added
+2025-11-07 16:58:42,649 - INFO - Main - Middlewares added
+2025-11-07 16:58:42,664 - INFO - Main - Routers added
+2025-11-07 17:23:35,255 - INFO - Main - Middlewares added
+2025-11-07 17:23:35,268 - INFO - Main - Routers added
+2025-11-07 17:26:17,175 - INFO - Main - Middlewares added
+2025-11-07 17:26:17,182 - INFO - Main - Routers added
+2025-11-07 17:27:18,761 - INFO - Main - Middlewares added
+2025-11-07 17:27:18,783 - INFO - Main - Routers added
+2025-11-07 17:29:50,410 - INFO - MiddleWare - Middleware triggered for DELETE http://127.0.0.1:8000/signup
+2025-11-07 17:31:48,810 - INFO - MiddleWare - Middleware triggered for POST http://127.0.0.1:8000/signup
+2025-11-07 17:31:48,947 - INFO - auth router - Enter into signup end point
+2025-11-07 17:31:50,391 - INFO - sqlalchemy.engine.Engine - select pg_catalog.version()
+2025-11-07 17:31:50,392 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 17:31:50,748 - INFO - sqlalchemy.engine.Engine - select current_schema()
+2025-11-07 17:31:50,751 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 17:31:51,105 - INFO - sqlalchemy.engine.Engine - show standard_conforming_strings
+2025-11-07 17:31:51,105 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 17:31:51,352 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 17:31:51,388 - INFO - sqlalchemy.engine.Engine - SELECT users.id, users.name, users.email, users.age 
+FROM users 
+WHERE users.email = $1::VARCHAR
+2025-11-07 17:31:51,390 - INFO - sqlalchemy.engine.Engine - [generated in 0.00322s] ('user1@gmail.com',)
+2025-11-07 17:31:52,955 - INFO - httpx - HTTP Request: POST https://icbdueedouzebvmjrpzm.supabase.co/auth/v1/signup "HTTP/2 422 Unprocessable Entity"
+2025-11-07 17:31:52,967 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-11-07 17:32:07,329 - INFO - MiddleWare - Middleware triggered for POST http://127.0.0.1:8000/signup
+2025-11-07 17:32:07,341 - INFO - auth router - Enter into signup end point
+2025-11-07 17:32:07,363 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 17:32:07,369 - INFO - sqlalchemy.engine.Engine - SELECT users.id, users.name, users.email, users.age 
+FROM users 
+WHERE users.email = $1::VARCHAR
+2025-11-07 17:32:07,375 - INFO - sqlalchemy.engine.Engine - [cached since 15.99s ago] ('user1@gmail.com',)
+2025-11-07 17:32:08,475 - INFO - httpx - HTTP Request: POST https://icbdueedouzebvmjrpzm.supabase.co/auth/v1/signup "HTTP/2 200 OK"
+2025-11-07 17:32:08,594 - INFO - sqlalchemy.engine.Engine - INSERT INTO users (id, name, email, age) VALUES ($1::VARCHAR, $2::VARCHAR, $3::VARCHAR, $4::INTEGER)
+2025-11-07 17:32:08,595 - INFO - sqlalchemy.engine.Engine - [generated in 0.00152s] ('d06f3602-58b8-4946-b827-fbf426a5339a', 'User 1', 'user1@gmail.com', 22)
+2025-11-07 17:32:08,777 - INFO - sqlalchemy.engine.Engine - COMMIT
+2025-11-07 17:32:08,854 - INFO - auth router - User has been been added
+2025-11-07 17:32:08,858 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 17:32:08,861 - INFO - sqlalchemy.engine.Engine - SELECT users.id, users.name, users.email, users.age 
+FROM users 
+WHERE users.id = $1::VARCHAR
+2025-11-07 17:32:08,861 - INFO - sqlalchemy.engine.Engine - [generated in 0.00078s] ('d06f3602-58b8-4946-b827-fbf426a5339a',)
+2025-11-07 17:32:09,171 - INFO - auth router - User has been been refreshed
+2025-11-07 17:32:09,174 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-11-07 17:34:08,633 - INFO - MiddleWare - Middleware triggered for POST http://127.0.0.1:8000/login
+2025-11-07 17:34:08,639 - INFO - auth router - Enter into login end point
+2025-11-07 17:34:08,643 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 17:34:08,645 - INFO - sqlalchemy.engine.Engine - SELECT users.id, users.name, users.email, users.age 
+FROM users 
+WHERE users.email = $1::VARCHAR
+2025-11-07 17:34:08,659 - INFO - sqlalchemy.engine.Engine - [cached since 137.3s ago] ('user1@gmail.com',)
+2025-11-07 17:34:10,681 - INFO - httpx - HTTP Request: POST https://icbdueedouzebvmjrpzm.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+2025-11-07 17:34:10,687 - INFO - auth router - User has been been authenticated
+2025-11-07 17:34:10,689 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-11-07 17:36:30,184 - INFO - MiddleWare - Middleware triggered for GET http://127.0.0.1:8000/all_users
+2025-11-07 17:36:30,419 - INFO - user router - Enter into get users end point
+2025-11-07 17:36:30,594 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 17:36:30,659 - INFO - sqlalchemy.engine.Engine - SELECT users.id, users.name, users.email, users.age 
+FROM users
+2025-11-07 17:36:30,686 - INFO - sqlalchemy.engine.Engine - [generated in 0.02715s] ()
+2025-11-07 17:36:30,960 - INFO - user router - Users has been been fetched
+2025-11-07 17:36:30,973 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-11-07 17:37:27,553 - INFO - MiddleWare - Middleware triggered for POST http://127.0.0.1:8000/query
+2025-11-07 17:39:03,146 - INFO - MiddleWare - Middleware triggered for POST http://127.0.0.1:8000/ask/query
+2025-11-07 17:39:04,153 - INFO - httpx - HTTP Request: GET https://icbdueedouzebvmjrpzm.supabase.co/auth/v1/user "HTTP/2 200 OK"
+2025-11-07 17:39:04,417 - INFO - httpx - HTTP Request: GET https://icbdueedouzebvmjrpzm.supabase.co/auth/v1/user "HTTP/2 200 OK"
+2025-11-07 17:39:04,424 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 17:39:04,437 - INFO - sqlalchemy.engine.Engine - SELECT query.id, query.count 
+FROM query 
+WHERE query.id = $1::VARCHAR
+2025-11-07 17:39:04,438 - INFO - sqlalchemy.engine.Engine - [generated in 0.00108s] ('d06f3602-58b8-4946-b827-fbf426a5339a',)
+2025-11-07 17:39:04,760 - INFO - sqlalchemy.engine.Engine - INSERT INTO query (id, count) VALUES ($1::VARCHAR, $2::INTEGER)
+2025-11-07 17:39:04,766 - INFO - sqlalchemy.engine.Engine - [generated in 0.00557s] ('d06f3602-58b8-4946-b827-fbf426a5339a', 1)
+2025-11-07 17:39:04,984 - INFO - sqlalchemy.engine.Engine - COMMIT
+2025-11-07 17:39:05,088 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 17:39:05,090 - INFO - sqlalchemy.engine.Engine - SELECT query.id, query.count 
+FROM query 
+WHERE query.id = $1::VARCHAR
+2025-11-07 17:39:05,092 - INFO - sqlalchemy.engine.Engine - [generated in 0.00149s] ('d06f3602-58b8-4946-b827-fbf426a5339a',)
+2025-11-07 17:39:06,543 - INFO - httpx - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-11-07 17:39:06,552 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-11-07 17:42:01,124 - INFO - Main - Middlewares added
+2025-11-07 17:42:01,135 - INFO - Main - Routers added
+2025-11-07 17:42:05,188 - INFO - Main - Middlewares added
+2025-11-07 17:42:05,209 - INFO - Main - Routers added
+2025-11-07 17:42:23,174 - INFO - MiddleWare - Middleware triggered for POST http://127.0.0.1:8000/ask/query
+2025-11-07 17:42:24,085 - INFO - httpx - HTTP Request: GET https://icbdueedouzebvmjrpzm.supabase.co/auth/v1/user "HTTP/2 200 OK"
+2025-11-07 17:42:24,204 - INFO - httpx - HTTP Request: GET https://icbdueedouzebvmjrpzm.supabase.co/auth/v1/user "HTTP/2 200 OK"
+2025-11-07 17:42:25,360 - INFO - sqlalchemy.engine.Engine - select pg_catalog.version()
+2025-11-07 17:42:25,361 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 17:42:25,691 - INFO - sqlalchemy.engine.Engine - select current_schema()
+2025-11-07 17:42:25,692 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 17:42:25,992 - INFO - sqlalchemy.engine.Engine - show standard_conforming_strings
+2025-11-07 17:42:25,995 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 17:42:26,231 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 17:42:26,428 - INFO - sqlalchemy.engine.Engine - SELECT query.id, query.count 
+FROM query 
+WHERE query.id = $1::VARCHAR
+2025-11-07 17:42:26,658 - INFO - sqlalchemy.engine.Engine - [generated in 0.22906s] ('d06f3602-58b8-4946-b827-fbf426a5339a',)
+2025-11-07 17:42:28,721 - INFO - httpx - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-11-07 17:42:28,723 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-11-07 17:47:36,468 - INFO - Main - Middlewares added
+2025-11-07 17:47:36,480 - INFO - Main - Routers added
+2025-11-07 17:48:44,097 - INFO - Main - Middlewares added
+2025-11-07 17:48:44,110 - INFO - Main - Routers added
+2025-11-07 18:02:47,320 - INFO - Main - Middlewares added
+2025-11-07 18:02:47,332 - INFO - Main - Routers added
+2025-11-07 18:03:11,787 - INFO - Main - Middlewares added
+2025-11-07 18:03:11,857 - INFO - Main - Routers added
+2025-11-07 18:03:21,108 - INFO - Main - Middlewares added
+2025-11-07 18:03:21,127 - INFO - Main - Routers added
+2025-11-07 18:03:26,198 - INFO - Main - Middlewares added
+2025-11-07 18:03:26,213 - INFO - Main - Routers added
+2025-11-07 18:05:10,150 - INFO - Main - Middlewares added
+2025-11-07 18:05:10,163 - INFO - Main - Routers added
+2025-11-07 18:05:27,357 - INFO - Main - Middlewares added
+2025-11-07 18:05:27,365 - INFO - Main - Routers added
+2025-11-07 18:06:37,895 - INFO - MiddleWare - Middleware triggered for POST http://127.0.0.1:8000/ask/query
+2025-11-07 18:06:38,829 - INFO - httpx - HTTP Request: GET https://icbdueedouzebvmjrpzm.supabase.co/auth/v1/user "HTTP/2 200 OK"
+2025-11-07 18:06:39,001 - INFO - httpx - HTTP Request: GET https://icbdueedouzebvmjrpzm.supabase.co/auth/v1/user "HTTP/2 200 OK"
+2025-11-07 18:06:40,227 - INFO - sqlalchemy.engine.Engine - select pg_catalog.version()
+2025-11-07 18:06:40,228 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 18:06:40,546 - INFO - sqlalchemy.engine.Engine - select current_schema()
+2025-11-07 18:06:40,548 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 18:06:40,824 - INFO - sqlalchemy.engine.Engine - show standard_conforming_strings
+2025-11-07 18:06:40,825 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 18:06:41,072 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 18:06:41,217 - INFO - sqlalchemy.engine.Engine - SELECT query.id, query.count 
+FROM query 
+WHERE query.id = $1::VARCHAR
+2025-11-07 18:06:41,432 - INFO - sqlalchemy.engine.Engine - [generated in 0.21474s] ('d06f3602-58b8-4946-b827-fbf426a5339a',)
+2025-11-07 18:06:42,406 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 18:06:42,416 - INFO - sqlalchemy.engine.Engine - UPDATE query SET count=$1::INTEGER WHERE query.id = $2::VARCHAR
+2025-11-07 18:06:42,417 - INFO - sqlalchemy.engine.Engine - [generated in 0.00084s] (2, 'd06f3602-58b8-4946-b827-fbf426a5339a')
+2025-11-07 18:06:42,577 - INFO - sqlalchemy.engine.Engine - COMMIT
+2025-11-07 18:06:42,650 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 18:06:42,656 - INFO - sqlalchemy.engine.Engine - SELECT query.id, query.count 
+FROM query 
+WHERE query.id = $1::VARCHAR
+2025-11-07 18:06:42,658 - INFO - sqlalchemy.engine.Engine - [generated in 0.00228s] ('d06f3602-58b8-4946-b827-fbf426a5339a',)
+2025-11-07 18:06:42,826 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-11-07 18:11:58,261 - INFO - Main - Middlewares added
+2025-11-07 18:11:58,273 - INFO - Main - Routers added
+2025-11-07 18:12:14,215 - INFO - Main - Middlewares added
+2025-11-07 18:12:14,244 - INFO - Main - Routers added
+2025-11-07 18:13:50,701 - INFO - Main - Middlewares added
+2025-11-07 18:13:50,753 - INFO - Main - Routers added
+2025-11-07 18:14:03,810 - INFO - Main - Middlewares added
+2025-11-07 18:14:03,826 - INFO - Main - Routers added
+2025-11-07 18:14:13,703 - INFO - Main - Middlewares added
+2025-11-07 18:14:13,709 - INFO - Main - Routers added
+2025-11-07 18:14:18,712 - INFO - Main - Middlewares added
+2025-11-07 18:14:18,728 - INFO - Main - Routers added
+2025-11-07 18:14:40,395 - INFO - Main - Middlewares added
+2025-11-07 18:14:40,410 - INFO - Main - Routers added
+2025-11-07 18:15:07,810 - INFO - Main - Middlewares added
+2025-11-07 18:15:07,842 - INFO - Main - Routers added
+2025-11-07 18:15:23,475 - INFO - Main - Middlewares added
+2025-11-07 18:15:23,493 - INFO - Main - Routers added
+2025-11-07 18:15:37,864 - INFO - Main - Middlewares added
+2025-11-07 18:15:37,900 - INFO - Main - Routers added
+2025-11-07 18:15:45,162 - INFO - Main - Middlewares added
+2025-11-07 18:15:45,172 - INFO - Main - Routers added
+2025-11-07 18:16:28,855 - INFO - Main - Middlewares added
+2025-11-07 18:16:28,882 - INFO - Main - Routers added
+2025-11-07 18:16:46,628 - INFO - Main - Middlewares added
+2025-11-07 18:16:46,673 - INFO - Main - Routers added
+2025-11-07 18:17:03,385 - INFO - Main - Middlewares added
+2025-11-07 18:17:03,433 - INFO - Main - Routers added
+2025-11-07 18:17:10,424 - INFO - Main - Middlewares added
+2025-11-07 18:17:10,534 - INFO - Main - Routers added
+2025-11-07 18:17:17,429 - INFO - Main - Middlewares added
+2025-11-07 18:17:17,449 - INFO - Main - Routers added
+2025-11-07 18:17:28,571 - INFO - Main - Middlewares added
+2025-11-07 18:17:28,592 - INFO - Main - Routers added
+2025-11-07 18:18:36,969 - INFO - Main - Middlewares added
+2025-11-07 18:18:37,014 - INFO - Main - Routers added
+2025-11-07 18:19:07,107 - INFO - Main - Middlewares added
+2025-11-07 18:19:07,126 - INFO - Main - Routers added
+2025-11-07 18:19:33,157 - INFO - Main - Middlewares added
+2025-11-07 18:19:33,170 - INFO - Main - Routers added
+2025-11-07 18:20:23,011 - INFO - Main - Middlewares added
+2025-11-07 18:20:23,024 - INFO - Main - Routers added
+2025-11-07 18:20:36,983 - INFO - Main - Middlewares added
+2025-11-07 18:20:36,998 - INFO - Main - Routers added
+2025-11-07 18:20:44,181 - INFO - Main - Middlewares added
+2025-11-07 18:20:44,195 - INFO - Main - Routers added
+2025-11-07 18:21:00,120 - INFO - Main - Middlewares added
+2025-11-07 18:21:00,151 - INFO - Main - Routers added
+2025-11-07 18:21:06,156 - INFO - Main - Middlewares added
+2025-11-07 18:21:06,287 - INFO - Main - Routers added
+2025-11-07 18:22:13,394 - INFO - Main - Middlewares added
+2025-11-07 18:22:13,415 - INFO - Main - Routers added
+2025-11-07 18:22:33,751 - INFO - Main - Middlewares added
+2025-11-07 18:22:33,855 - INFO - Main - Routers added
+2025-11-07 18:22:46,109 - INFO - Main - Middlewares added
+2025-11-07 18:22:46,123 - INFO - Main - Routers added
+2025-11-07 18:22:50,990 - INFO - Main - Middlewares added
+2025-11-07 18:22:50,994 - INFO - Main - Routers added
+2025-11-07 18:23:17,418 - INFO - Main - Middlewares added
+2025-11-07 18:23:17,425 - INFO - Main - Routers added
+2025-11-07 18:25:12,678 - INFO - Main - Middlewares added
+2025-11-07 18:25:12,717 - INFO - Main - Routers added
+2025-11-07 18:25:26,114 - INFO - Main - Middlewares added
+2025-11-07 18:25:26,127 - INFO - Main - Routers added
+2025-11-07 18:26:15,057 - INFO - Main - Middlewares added
+2025-11-07 18:26:15,075 - INFO - Main - Routers added
+2025-11-07 18:26:41,220 - INFO - Main - Middlewares added
+2025-11-07 18:26:41,220 - INFO - Main - Routers added
+2025-11-07 18:29:11,819 - INFO - Main - Middlewares added
+2025-11-07 18:29:11,837 - INFO - Main - Routers added
+2025-11-07 18:31:18,454 - INFO - Main - Middlewares added
+2025-11-07 18:31:18,497 - INFO - Main - Routers added
+2025-11-07 18:31:24,043 - INFO - Main - Middlewares added
+2025-11-07 18:31:24,058 - INFO - Main - Routers added
+2025-11-07 18:31:38,755 - INFO - Main - Middlewares added
+2025-11-07 18:31:38,768 - INFO - Main - Routers added
+2025-11-07 18:31:44,272 - INFO - Main - Middlewares added
+2025-11-07 18:31:44,436 - INFO - Main - Routers added
+2025-11-07 18:32:04,289 - INFO - Main - Middlewares added
+2025-11-07 18:32:04,296 - INFO - Main - Routers added
+2025-11-07 18:32:58,477 - INFO - Main - Middlewares added
+2025-11-07 18:32:58,485 - INFO - Main - Routers added
+2025-11-07 18:33:28,336 - INFO - Main - Middlewares added
+2025-11-07 18:33:28,345 - INFO - Main - Routers added
+2025-11-07 18:33:47,725 - INFO - Main - Middlewares added
+2025-11-07 18:33:47,733 - INFO - Main - Routers added
+2025-11-07 18:34:17,856 - INFO - Main - Middlewares added
+2025-11-07 18:34:17,902 - INFO - Main - Routers added
+2025-11-07 18:35:57,836 - INFO - Main - Middlewares added
+2025-11-07 18:35:57,844 - INFO - Main - Routers added
+2025-11-07 18:37:12,100 - INFO - Main - Middlewares added
+2025-11-07 18:37:12,115 - INFO - Main - Routers added
+2025-11-07 18:37:31,262 - INFO - Main - Middlewares added
+2025-11-07 18:37:31,267 - INFO - Main - Routers added
+2025-11-07 18:37:43,833 - INFO - Main - Middlewares added
+2025-11-07 18:37:43,867 - INFO - Main - Routers added
+2025-11-07 18:37:51,120 - INFO - Main - Middlewares added
+2025-11-07 18:37:51,129 - INFO - Main - Routers added
+2025-11-07 18:38:15,196 - INFO - Main - Middlewares added
+2025-11-07 18:38:15,208 - INFO - Main - Routers added
+2025-11-07 18:42:06,012 - INFO - Main - Middlewares added
+2025-11-07 18:42:06,019 - INFO - Main - Routers added
+2025-11-07 18:44:36,209 - INFO - Main - Middlewares added
+2025-11-07 18:44:36,227 - INFO - Main - Routers added
+2025-11-07 18:44:46,350 - INFO - Main - Middlewares added
+2025-11-07 18:44:46,359 - INFO - Main - Routers added
+2025-11-07 18:44:54,209 - INFO - Main - Middlewares added
+2025-11-07 18:44:54,224 - INFO - Main - Routers added
+2025-11-07 18:45:50,027 - INFO - Main - Middlewares added
+2025-11-07 18:45:50,146 - INFO - Main - Routers added
+2025-11-07 18:45:58,396 - INFO - Main - Middlewares added
+2025-11-07 18:45:58,417 - INFO - Main - Routers added
+2025-11-07 18:51:23,785 - INFO - MiddleWare - Middleware triggered for POST http://127.0.0.1:8000/user/d06f3602-58b8-4946-b827-fbf426a5339a/linkedin-checker/profile/stream
+2025-11-07 18:51:46,691 - INFO - MiddleWare - Middleware triggered for POST http://127.0.0.1:8000/user/d06f3602-58b8-4946-b827-fbf426a5339a/linkedin-checker/profile/stream
+2025-11-07 18:51:52,880 - INFO - MiddleWare - Middleware triggered for POST http://127.0.0.1:8000/user/d06f3602-58b8-4946-b827-fbf426a5339a/linkedin-checker/profile/stream
+2025-11-07 18:53:50,842 - INFO - Main - Middlewares added
+2025-11-07 18:53:50,862 - INFO - Main - Routers added
+2025-11-07 18:53:59,598 - INFO - MiddleWare - Middleware triggered for POST http://127.0.0.1:8000/user/d06f3602-58b8-4946-b827-fbf426a5339a/linkedin-checker/profile/stream
+2025-11-07 18:54:02,310 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 18:54:05,790 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 18:54:06,559 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 18:54:07,296 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 18:54:08,610 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 18:54:10,338 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 18:54:12,494 - INFO - sqlalchemy.engine.Engine - select pg_catalog.version()
+2025-11-07 18:54:12,495 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 18:54:13,293 - INFO - sqlalchemy.engine.Engine - select current_schema()
+2025-11-07 18:54:13,298 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 18:54:14,487 - INFO - sqlalchemy.engine.Engine - show standard_conforming_strings
+2025-11-07 18:54:14,488 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 18:54:15,054 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 18:54:15,063 - INFO - sqlalchemy.engine.Engine - SELECT user_linkedin_profile.user_id, user_linkedin_profile.linkedin_profile_url, user_linkedin_profile.created_at 
+FROM user_linkedin_profile 
+WHERE user_linkedin_profile.user_id = $1::UUID
+2025-11-07 18:54:15,064 - INFO - sqlalchemy.engine.Engine - [generated in 0.00098s] (UUID('d06f3602-58b8-4946-b827-fbf426a5339a'),)
+2025-11-07 18:54:15,374 - INFO - sqlalchemy.engine.Engine - SELECT linkedin_profile.profile_url, linkedin_profile.profile_data, linkedin_profile.profile_report_data, linkedin_profile.created_at 
+FROM linkedin_profile 
+WHERE linkedin_profile.profile_url = $1::VARCHAR
+2025-11-07 18:54:15,389 - INFO - sqlalchemy.engine.Engine - [generated in 0.01547s] ('https://www.linkedin.com/in/rohith-reddy-jarugu/',)
+2025-11-07 18:54:15,857 - INFO - sqlalchemy.engine.Engine - INSERT INTO linkedin_profile (profile_url, profile_data, profile_report_data) VALUES ($1::VARCHAR, $2::JSONB, $3::JSONB) RETURNING linkedin_profile.created_at
+2025-11-07 18:54:15,867 - INFO - sqlalchemy.engine.Engine - [generated in 0.01370s] ('https://www.linkedin.com/in/rohith-reddy-jarugu/', '{"profile": {"name": "Rohith Reddy J", "headline": "ATS-friendly resumes that win interviews", "location": "Bengaluru, Karnataka, India", "connection ... (6072 characters truncated) ... 00/profile-displayphoto-shrink_100_100/0/1706691043566?e=1762992000&v=beta&t=SFSqbfuZ_lTTknHTqkErwEqF4hKycywRnagF6pucr80", "date": "May 16, 2021"}]}}', '{"message_type": "complete_analysis", "score": 55, "sections": [{"section": "profile", "score": "70", "title": "Profile Content", "description": "Key ... (8816 characters truncated) ... o keep your profile active"], "additional_info": ["Regular content sharing can help you stay top of mind with recruiters and potential employers"]}]}')
+2025-11-07 18:54:16,266 - INFO - sqlalchemy.engine.Engine - INSERT INTO user_linkedin_profile (user_id, linkedin_profile_url) VALUES ($1::UUID, $2::VARCHAR) RETURNING user_linkedin_profile.created_at
+2025-11-07 18:54:16,267 - INFO - sqlalchemy.engine.Engine - [generated in 0.00137s] (UUID('d06f3602-58b8-4946-b827-fbf426a5339a'), 'https://www.linkedin.com/in/rohith-reddy-jarugu/')
+2025-11-07 18:54:16,437 - INFO - sqlalchemy.engine.Engine - COMMIT
+2025-11-07 18:56:25,996 - INFO - MiddleWare - Middleware triggered for GET http://127.0.0.1:8000/user/d06f3602-58b8-4946-b827-fbf426a5339a/linkedin-checker/profile
+2025-11-07 18:56:25,998 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 18:56:25,999 - INFO - sqlalchemy.engine.Engine - SELECT user_linkedin_profile.user_id, user_linkedin_profile.linkedin_profile_url, user_linkedin_profile.created_at 
+FROM user_linkedin_profile 
+WHERE user_linkedin_profile.user_id = $1::UUID
+2025-11-07 18:56:25,999 - INFO - sqlalchemy.engine.Engine - [cached since 130.9s ago] (UUID('d06f3602-58b8-4946-b827-fbf426a5339a'),)
+2025-11-07 18:56:26,147 - INFO - sqlalchemy.engine.Engine - SELECT linkedin_profile.profile_url, linkedin_profile.profile_data, linkedin_profile.profile_report_data, linkedin_profile.created_at 
+FROM linkedin_profile 
+WHERE linkedin_profile.profile_url = $1::VARCHAR
+2025-11-07 18:56:26,148 - INFO - sqlalchemy.engine.Engine - [cached since 130.8s ago] ('https://www.linkedin.com/in/rohith-reddy-jarugu/',)
+2025-11-07 18:56:26,316 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-11-07 19:03:49,334 - INFO - Main - Middlewares added
+2025-11-07 19:03:49,380 - INFO - Main - Routers added
+2025-11-07 19:03:56,661 - INFO - Main - Middlewares added
+2025-11-07 19:03:56,677 - INFO - Main - Routers added
+2025-11-07 19:04:35,044 - INFO - Main - Middlewares added
+2025-11-07 19:04:35,120 - INFO - Main - Routers added
+2025-11-07 19:04:50,938 - INFO - Main - Middlewares added
+2025-11-07 19:04:50,974 - INFO - Main - Routers added
+2025-11-07 19:05:03,839 - INFO - Main - Middlewares added
+2025-11-07 19:05:03,858 - INFO - Main - Routers added
+2025-11-07 19:05:27,759 - INFO - Main - Middlewares added
+2025-11-07 19:05:27,761 - INFO - Main - Routers added
+2025-11-07 19:05:55,209 - INFO - MiddleWare - Middleware triggered for GET http://127.0.0.1:8000/user/d06f3602-58b8-4946-b827-fbf426a5339a/linkedin-checker/profile
+2025-11-07 19:05:57,278 - INFO - sqlalchemy.engine.Engine - select pg_catalog.version()
+2025-11-07 19:05:57,279 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 19:05:57,688 - INFO - sqlalchemy.engine.Engine - select current_schema()
+2025-11-07 19:05:57,779 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 19:05:58,239 - INFO - sqlalchemy.engine.Engine - show standard_conforming_strings
+2025-11-07 19:05:58,241 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 19:05:58,516 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 19:05:58,525 - INFO - sqlalchemy.engine.Engine - SELECT user_linkedin_profile.user_id, user_linkedin_profile.linkedin_profile_url, user_linkedin_profile.created_at 
+FROM user_linkedin_profile 
+WHERE user_linkedin_profile.user_id = $1::UUID
+2025-11-07 19:05:58,527 - INFO - sqlalchemy.engine.Engine - [generated in 0.00087s] (UUID('d06f3602-58b8-4946-b827-fbf426a5339a'),)
+2025-11-07 19:05:58,844 - INFO - sqlalchemy.engine.Engine - SELECT linkedin_profile.profile_url, linkedin_profile.profile_data, linkedin_profile.profile_report_data, linkedin_profile.created_at 
+FROM linkedin_profile 
+WHERE linkedin_profile.profile_url = $1::VARCHAR
+2025-11-07 19:05:58,845 - INFO - sqlalchemy.engine.Engine - [generated in 0.00094s] ('https://www.linkedin.com/in/rohith-reddy-jarugu/',)
+2025-11-07 19:05:59,126 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-11-07 19:06:06,582 - INFO - MiddleWare - Middleware triggered for POST http://127.0.0.1:8000/user/d06f3602-58b8-4946-b827-fbf426a5339a/linkedin-checker/profile/stream
+2025-11-07 19:06:08,682 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:06:10,218 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:06:11,097 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:06:11,958 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:06:13,314 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:06:15,201 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:06:15,208 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 19:06:15,211 - INFO - sqlalchemy.engine.Engine - SELECT user_linkedin_profile.user_id, user_linkedin_profile.linkedin_profile_url, user_linkedin_profile.created_at 
+FROM user_linkedin_profile 
+WHERE user_linkedin_profile.user_id = $1::UUID
+2025-11-07 19:06:15,213 - INFO - sqlalchemy.engine.Engine - [cached since 16.69s ago] (UUID('d06f3602-58b8-4946-b827-fbf426a5339a'),)
+2025-11-07 19:06:15,380 - INFO - sqlalchemy.engine.Engine - SELECT linkedin_profile.profile_url, linkedin_profile.profile_data, linkedin_profile.profile_report_data, linkedin_profile.created_at 
+FROM linkedin_profile 
+WHERE linkedin_profile.profile_url = $1::VARCHAR
+2025-11-07 19:06:15,381 - INFO - sqlalchemy.engine.Engine - [cached since 16.54s ago] ('https://www.linkedin.com/in/rohith-reddy-jarugu/',)
+2025-11-07 19:06:15,646 - INFO - sqlalchemy.engine.Engine - UPDATE linkedin_profile SET profile_report_data=$1::JSONB WHERE linkedin_profile.profile_url = $2::VARCHAR
+2025-11-07 19:06:15,647 - INFO - sqlalchemy.engine.Engine - [generated in 0.00095s] ('{"message_type": "complete_analysis", "score": 55, "sections": [{"section": "profile", "score": "70", "title": "Profile Content", "description": "Key ... (13530 characters truncated) ... o keep your profile active"], "additional_info": ["Regular content sharing can help you stay top of mind with recruiters and potential employers"]}]}', 'https://www.linkedin.com/in/rohith-reddy-jarugu/')
+2025-11-07 19:06:16,076 - INFO - sqlalchemy.engine.Engine - COMMIT
+2025-11-07 19:12:07,753 - INFO - Main - Middlewares added
+2025-11-07 19:12:07,772 - INFO - Main - Routers added
+2025-11-07 19:12:25,132 - INFO - Main - Middlewares added
+2025-11-07 19:12:25,160 - INFO - Main - Routers added
+2025-11-07 19:12:33,065 - INFO - Main - Middlewares added
+2025-11-07 19:12:33,096 - INFO - Main - Routers added
+2025-11-07 19:13:11,713 - INFO - Main - Middlewares added
+2025-11-07 19:13:11,726 - INFO - Main - Routers added
+2025-11-07 19:13:32,349 - INFO - MiddleWare - Middleware triggered for POST http://127.0.0.1:8000/user/d06f3602-58b8-4946-b827-fbf426a5339a/linkedin-checker/profile/stream
+2025-11-07 19:13:33,820 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:13:35,887 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:13:36,688 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:13:37,397 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:13:38,929 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:13:41,018 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:13:42,391 - INFO - sqlalchemy.engine.Engine - select pg_catalog.version()
+2025-11-07 19:13:42,393 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 19:13:42,717 - INFO - sqlalchemy.engine.Engine - select current_schema()
+2025-11-07 19:13:42,723 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 19:13:43,083 - INFO - sqlalchemy.engine.Engine - show standard_conforming_strings
+2025-11-07 19:13:43,084 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 19:13:43,315 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 19:13:43,346 - INFO - sqlalchemy.engine.Engine - SELECT user_linkedin_profile.user_id, user_linkedin_profile.linkedin_profile_url, user_linkedin_profile.created_at 
+FROM user_linkedin_profile 
+WHERE user_linkedin_profile.user_id = $1::UUID
+2025-11-07 19:13:43,347 - INFO - sqlalchemy.engine.Engine - [generated in 0.00136s] (UUID('d06f3602-58b8-4946-b827-fbf426a5339a'),)
+2025-11-07 19:13:43,583 - INFO - sqlalchemy.engine.Engine - SELECT linkedin_profile.profile_url, linkedin_profile.profile_data, linkedin_profile.profile_report_data, linkedin_profile.created_at 
+FROM linkedin_profile 
+WHERE linkedin_profile.profile_url = $1::VARCHAR
+2025-11-07 19:13:43,584 - INFO - sqlalchemy.engine.Engine - [generated in 0.00107s] ('https://www.linkedin.com/in/rohith-reddy-jarugu/',)
+2025-11-07 19:13:43,893 - INFO - sqlalchemy.engine.Engine - UPDATE linkedin_profile SET profile_report_data=$1::JSONB WHERE linkedin_profile.profile_url = $2::VARCHAR
+2025-11-07 19:13:43,895 - INFO - sqlalchemy.engine.Engine - [generated in 0.00147s] ('{"message_type": "complete_analysis", "score": 55, "sections": [{"section": "profile", "score": "70", "title": "Profile Content", "description": "Key ... (10810 characters truncated) ... o keep your profile active"], "additional_info": ["Regular content sharing can help you stay top of mind with recruiters and potential employers"]}]}', 'https://www.linkedin.com/in/rohith-reddy-jarugu/')
+2025-11-07 19:13:44,183 - INFO - sqlalchemy.engine.Engine - COMMIT
+2025-11-07 19:19:22,137 - INFO - Main - Middlewares added
+2025-11-07 19:19:22,152 - INFO - Main - Routers added
+2025-11-07 19:19:33,868 - INFO - Main - Middlewares added
+2025-11-07 19:19:33,881 - INFO - Main - Routers added
+2025-11-07 19:19:49,581 - INFO - Main - Middlewares added
+2025-11-07 19:19:49,597 - INFO - Main - Routers added
+2025-11-07 19:20:17,872 - INFO - Main - Middlewares added
+2025-11-07 19:20:18,015 - INFO - Main - Routers added
+2025-11-07 19:20:30,459 - INFO - Main - Middlewares added
+2025-11-07 19:20:30,487 - INFO - Main - Routers added
+2025-11-07 19:20:39,761 - INFO - Main - Middlewares added
+2025-11-07 19:20:40,041 - INFO - Main - Routers added
+2025-11-07 19:23:34,734 - INFO - Main - Middlewares added
+2025-11-07 19:23:34,751 - INFO - Main - Routers added
+2025-11-07 19:23:41,339 - INFO - MiddleWare - Middleware triggered for POST http://127.0.0.1:8000/user/d06f3602-58b8-4946-b827-fbf426a5339a/linkedin-checker/profile/stream
+2025-11-07 19:23:42,895 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:23:46,313 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:23:47,663 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:23:56,968 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:24:00,334 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:24:02,566 - INFO - sqlalchemy.engine.Engine - select pg_catalog.version()
+2025-11-07 19:24:02,567 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 19:24:02,893 - INFO - sqlalchemy.engine.Engine - select current_schema()
+2025-11-07 19:24:02,894 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 19:24:03,205 - INFO - sqlalchemy.engine.Engine - show standard_conforming_strings
+2025-11-07 19:24:03,206 - INFO - sqlalchemy.engine.Engine - [raw sql] ()
+2025-11-07 19:24:03,471 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 19:24:03,480 - INFO - sqlalchemy.engine.Engine - SELECT user_linkedin_profile.user_id, user_linkedin_profile.linkedin_profile_url, user_linkedin_profile.created_at 
+FROM user_linkedin_profile 
+WHERE user_linkedin_profile.user_id = $1::UUID
+2025-11-07 19:24:03,481 - INFO - sqlalchemy.engine.Engine - [generated in 0.00197s] (UUID('d06f3602-58b8-4946-b827-fbf426a5339a'),)
+2025-11-07 19:24:03,752 - INFO - sqlalchemy.engine.Engine - SELECT linkedin_profile.profile_url, linkedin_profile.profile_data, linkedin_profile.profile_report_data, linkedin_profile.created_at 
+FROM linkedin_profile 
+WHERE linkedin_profile.profile_url = $1::VARCHAR
+2025-11-07 19:24:03,754 - INFO - sqlalchemy.engine.Engine - [generated in 0.00146s] ('https://www.linkedin.com/in/rohith-reddy-jarugu/',)
+2025-11-07 19:24:04,027 - INFO - sqlalchemy.engine.Engine - UPDATE linkedin_profile SET profile_report_data=$1::JSONB WHERE linkedin_profile.profile_url = $2::VARCHAR
+2025-11-07 19:24:04,029 - INFO - sqlalchemy.engine.Engine - [generated in 0.00248s] ('{"message_type": "complete_analysis", "score": 76, "sections": [{"section": "profile", "score": "70", "title": "Profile Content", "description": "Key ... (12637 characters truncated) ... o keep your profile active"], "additional_info": ["Regular content sharing can help you stay top of mind with recruiters and potential employers"]}]}', 'https://www.linkedin.com/in/rohith-reddy-jarugu/')
+2025-11-07 19:24:04,249 - INFO - sqlalchemy.engine.Engine - COMMIT
+2025-11-07 19:24:40,198 - INFO - MiddleWare - Middleware triggered for GET http://127.0.0.1:8000/user/d06f3602-58b8-4946-b827-fbf426a5339a/linkedin-checker/profile
+2025-11-07 19:24:40,201 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 19:24:40,202 - INFO - sqlalchemy.engine.Engine - SELECT user_linkedin_profile.user_id, user_linkedin_profile.linkedin_profile_url, user_linkedin_profile.created_at 
+FROM user_linkedin_profile 
+WHERE user_linkedin_profile.user_id = $1::UUID
+2025-11-07 19:24:40,203 - INFO - sqlalchemy.engine.Engine - [cached since 36.72s ago] (UUID('d06f3602-58b8-4946-b827-fbf426a5339a'),)
+2025-11-07 19:24:40,391 - INFO - sqlalchemy.engine.Engine - SELECT linkedin_profile.profile_url, linkedin_profile.profile_data, linkedin_profile.profile_report_data, linkedin_profile.created_at 
+FROM linkedin_profile 
+WHERE linkedin_profile.profile_url = $1::VARCHAR
+2025-11-07 19:24:40,392 - INFO - sqlalchemy.engine.Engine - [cached since 36.64s ago] ('https://www.linkedin.com/in/rohith-reddy-jarugu/',)
+2025-11-07 19:24:40,586 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-11-07 19:25:34,282 - INFO - MiddleWare - Middleware triggered for POST http://127.0.0.1:8000/user/d06f3602-58b8-4946-b827-fbf426a5339a/linkedin-checker/profile/stream
+2025-11-07 19:25:36,492 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:25:38,104 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:25:39,016 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:25:40,208 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:25:41,800 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:25:43,564 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:25:43,567 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 19:25:43,579 - INFO - sqlalchemy.engine.Engine - SELECT user_linkedin_profile.user_id, user_linkedin_profile.linkedin_profile_url, user_linkedin_profile.created_at 
+FROM user_linkedin_profile 
+WHERE user_linkedin_profile.user_id = $1::UUID
+2025-11-07 19:25:43,587 - INFO - sqlalchemy.engine.Engine - [cached since 100.1s ago] (UUID('d06f3602-58b8-4946-b827-fbf426a5339a'),)
+2025-11-07 19:25:43,787 - INFO - sqlalchemy.engine.Engine - SELECT linkedin_profile.profile_url, linkedin_profile.profile_data, linkedin_profile.profile_report_data, linkedin_profile.created_at 
+FROM linkedin_profile 
+WHERE linkedin_profile.profile_url = $1::VARCHAR
+2025-11-07 19:25:43,788 - INFO - sqlalchemy.engine.Engine - [cached since 100s ago] ('https://www.linkedin.com/in/rohith-reddy-jarugu/',)
+2025-11-07 19:25:44,023 - INFO - sqlalchemy.engine.Engine - UPDATE linkedin_profile SET profile_report_data=$1::JSONB WHERE linkedin_profile.profile_url = $2::VARCHAR
+2025-11-07 19:25:44,024 - INFO - sqlalchemy.engine.Engine - [cached since 100s ago] ('{"message_type": "complete_analysis", "score": 76, "sections": [{"section": "profile", "score": "70", "title": "Profile Content", "description": "Key ... (12914 characters truncated) ... o keep your profile active"], "additional_info": ["Regular content sharing can help you stay top of mind with recruiters and potential employers"]}]}', 'https://www.linkedin.com/in/rohith-reddy-jarugu/')
+2025-11-07 19:25:44,130 - INFO - sqlalchemy.engine.Engine - COMMIT
+2025-11-07 19:28:47,099 - INFO - MiddleWare - Middleware triggered for POST http://127.0.0.1:8000/user/d06f3602-58b8-4946-b827-fbf426a5339a/linkedin-checker/profile/stream
+2025-11-07 19:28:48,527 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:28:50,602 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:28:51,503 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:28:52,772 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:28:52,776 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 19:28:52,784 - INFO - sqlalchemy.engine.Engine - SELECT user_linkedin_profile.user_id, user_linkedin_profile.linkedin_profile_url, user_linkedin_profile.created_at 
+FROM user_linkedin_profile 
+WHERE user_linkedin_profile.user_id = $1::UUID
+2025-11-07 19:28:52,787 - INFO - sqlalchemy.engine.Engine - [cached since 289.3s ago] (UUID('d06f3602-58b8-4946-b827-fbf426a5339a'),)
+2025-11-07 19:28:53,000 - INFO - sqlalchemy.engine.Engine - SELECT linkedin_profile.profile_url, linkedin_profile.profile_data, linkedin_profile.profile_report_data, linkedin_profile.created_at 
+FROM linkedin_profile 
+WHERE linkedin_profile.profile_url = $1::VARCHAR
+2025-11-07 19:28:53,001 - INFO - sqlalchemy.engine.Engine - [cached since 289.2s ago] ('https://www.linkedin.com/in/rohith-reddy-jarugu/',)
+2025-11-07 19:28:53,230 - INFO - sqlalchemy.engine.Engine - UPDATE linkedin_profile SET profile_url=$1::VARCHAR, profile_data=$2::JSONB, profile_report_data=$3::JSONB WHERE linkedin_profile.profile_url = $4::VARCHAR
+2025-11-07 19:28:53,230 - INFO - sqlalchemy.engine.Engine - [generated in 0.00314s] ('www.linkedin.com/in/charan-derangula-123066298', '{"profile": {"name": "Charan Derangula", "headline": "Testing purpose", "location": "Dharmavaram, Andhra Pradesh, India", "connections": 153, "banner ... (4326 characters truncated) ...  AI, GPT"], "newsletters": ["The Atlas", "This Week in AI"], "schools": ["Indian Institute of Technology, Madras", "freeCodeCamp"], "topVoices": []}}', '{"message_type": "complete_analysis", "score": 80, "sections": [{"section": "profile", "score": "80", "title": "Profile Content", "description": "Key ... (11691 characters truncated) ... o keep your profile active"], "additional_info": ["Regular content sharing can help you stay top of mind with recruiters and potential employers"]}]}', 'https://www.linkedin.com/in/rohith-reddy-jarugu/')
+2025-11-07 19:28:53,467 - INFO - sqlalchemy.engine.Engine - UPDATE user_linkedin_profile SET linkedin_profile_url=$1::VARCHAR WHERE user_linkedin_profile.user_id = $2::UUID
+2025-11-07 19:28:53,468 - INFO - sqlalchemy.engine.Engine - [generated in 0.00187s] ('www.linkedin.com/in/charan-derangula-123066298', UUID('d06f3602-58b8-4946-b827-fbf426a5339a'))
+2025-11-07 19:28:53,614 - INFO - sqlalchemy.engine.Engine - COMMIT
+2025-11-07 19:30:08,864 - INFO - MiddleWare - Middleware triggered for GET http://127.0.0.1:8000/user/d06f3602-58b8-4946-b827-fbf426a5339a/linkedin-checker/profile
+2025-11-07 19:30:08,866 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 19:30:08,867 - INFO - sqlalchemy.engine.Engine - SELECT user_linkedin_profile.user_id, user_linkedin_profile.linkedin_profile_url, user_linkedin_profile.created_at 
+FROM user_linkedin_profile 
+WHERE user_linkedin_profile.user_id = $1::UUID
+2025-11-07 19:30:08,868 - INFO - sqlalchemy.engine.Engine - [cached since 365.4s ago] (UUID('d06f3602-58b8-4946-b827-fbf426a5339a'),)
+2025-11-07 19:30:09,026 - INFO - sqlalchemy.engine.Engine - SELECT linkedin_profile.profile_url, linkedin_profile.profile_data, linkedin_profile.profile_report_data, linkedin_profile.created_at 
+FROM linkedin_profile 
+WHERE linkedin_profile.profile_url = $1::VARCHAR
+2025-11-07 19:30:09,027 - INFO - sqlalchemy.engine.Engine - [cached since 365.3s ago] ('www.linkedin.com/in/charan-derangula-123066298',)
+2025-11-07 19:30:09,241 - INFO - sqlalchemy.engine.Engine - ROLLBACK
+2025-11-07 19:36:20,945 - INFO - MiddleWare - Middleware triggered for GET http://127.0.0.1:8000/user/d06f3602-58b8-4946-b827-fbf426a5339a/linkedin-checker/profile
+2025-11-07 19:36:21,008 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 19:36:21,185 - INFO - sqlalchemy.engine.Engine - SELECT user_linkedin_profile.user_id, user_linkedin_profile.linkedin_profile_url, user_linkedin_profile.created_at 
+FROM user_linkedin_profile 
+WHERE user_linkedin_profile.user_id = $1::UUID
+2025-11-07 19:36:21,325 - INFO - sqlalchemy.engine.Engine - [cached since 737.8s ago] (UUID('d06f3602-58b8-4946-b827-fbf426a5339a'),)
+2025-11-07 19:38:46,029 - INFO - MiddleWare - Middleware triggered for POST http://127.0.0.1:8000/user/d06f3602-58b8-4946-b827-fbf426a5339a/linkedin-checker/profile/stream
+2025-11-07 19:38:48,028 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:38:50,333 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:38:51,610 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:38:53,211 - INFO - httpx - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:38:56,122 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 19:38:56,126 - INFO - sqlalchemy.engine.Engine - SELECT user_linkedin_profile.user_id, user_linkedin_profile.linkedin_profile_url, user_linkedin_profile.created_at 
+FROM user_linkedin_profile 
+WHERE user_linkedin_profile.user_id = $1::UUID
+2025-11-07 19:38:56,126 - INFO - sqlalchemy.engine.Engine - [cached since 892.6s ago] (UUID('d06f3602-58b8-4946-b827-fbf426a5339a'),)
+2025-11-07 19:38:56,577 - INFO - sqlalchemy.engine.Engine - SELECT linkedin_profile.profile_url, linkedin_profile.profile_data, linkedin_profile.profile_report_data, linkedin_profile.created_at 
+FROM linkedin_profile 
+WHERE linkedin_profile.profile_url = $1::VARCHAR
+2025-11-07 19:38:56,587 - INFO - sqlalchemy.engine.Engine - [cached since 892.8s ago] ('www.linkedin.com/in/charan-derangula-123066298',)
+2025-11-07 19:38:57,368 - INFO - sqlalchemy.engine.Engine - UPDATE linkedin_profile SET profile_report_data=$1::JSONB WHERE linkedin_profile.profile_url = $2::VARCHAR
+2025-11-07 19:38:57,368 - INFO - sqlalchemy.engine.Engine - [cached since 893.3s ago] ('{"message_type": "complete_analysis", "score": 80, "sections": [{"section": "profile", "score": "80", "title": "Profile Content", "description": "Key ... (11839 characters truncated) ... o keep your profile active"], "additional_info": ["Regular content sharing can help you stay top of mind with recruiters and potential employers"]}]}', 'www.linkedin.com/in/charan-derangula-123066298')
+2025-11-07 19:38:57,971 - INFO - sqlalchemy.engine.Engine - COMMIT
+2025-11-07 19:39:03,960 - INFO - MiddleWare - Middleware triggered for GET http://127.0.0.1:8000/user/d06f3602-58b8-4946-b827-fbf426a5339a/linkedin-checker/profile
+2025-11-07 19:39:03,964 - INFO - sqlalchemy.engine.Engine - BEGIN (implicit)
+2025-11-07 19:39:03,966 - INFO - sqlalchemy.engine.Engine - SELECT user_linkedin_profile.user_id, user_linkedin_profile.linkedin_profile_url, user_linkedin_profile.created_at 
+FROM user_linkedin_profile 
+WHERE user_linkedin_profile.user_id = $1::UUID
+2025-11-07 19:39:03,972 - INFO - sqlalchemy.engine.Engine - [cached since 900.5s ago] (UUID('d06f3602-58b8-4946-b827-fbf426a5339a'),)
+2025-11-07 19:39:04,313 - INFO - sqlalchemy.engine.Engine - SELECT linkedin_profile.profile_url, linkedin_profile.profile_data, linkedin_profile.profile_report_data, linkedin_profile.created_at 
+FROM linkedin_profile 
+WHERE linkedin_profile.profile_url = $1::VARCHAR
+2025-11-07 19:39:04,320 - INFO - sqlalchemy.engine.Engine - [cached since 900.6s ago] ('www.linkedin.com/in/charan-derangula-123066298',)
+2025-11-07 19:39:04,726 - INFO - sqlalchemy.engine.Engine - ROLLBACK
