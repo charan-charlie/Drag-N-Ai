@@ -10,6 +10,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
 from typing import Dict, Any, List, AsyncGenerator
 from models.user_linkedin_profile import UserLinkedInProfile
+from models.user import User
 from models.linkedin_profile import LinkedInProfile
 from database import get_db
 
@@ -449,6 +450,27 @@ async def get_linkedin_profile(user_id: UUID, db: AsyncSession = Depends(get_db)
         # Use profile_report_data if available, otherwise fall back to profile_data
         data_to_return = linkedin_profile.profile_report_data if linkedin_profile.profile_report_data is not None else {}
         return {"status": "success", "data": data_to_return}
+
+    except Exception as e:
+        raise HTTPException(status_code = 500, detail = str(e))
+
+
+@router.get("/users/{user_id}/profile")
+async def get_user_info(user_id: UUID, db: AsyncSession = Depends(get_db)):
+    try:
+        # Get user's linkedin profile record
+        user_profile_query = select(User).where(User.id == user_id)
+        user_profile = await db.scalar(user_profile_query)
+        
+        if not user_profile:
+            raise HTTPException(status_code = 404, detail = "User not found")
+
+
+        return {
+            "name": user_profile.name,
+            "email": user_profile.email,
+            "age": user_profile.age
+        }
 
     except Exception as e:
         raise HTTPException(status_code = 500, detail = str(e))
