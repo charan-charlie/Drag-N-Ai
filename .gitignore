@@ -1,5 +1,24 @@
-# ignore env folder
+# Environment variables
 .env
-/env
-alembic/
+
+# Virtual environment folder
+env/
+venv/
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+
+# IDE/project files
+.vscode/
+.idea/
+*.log
+
+# System files
+.DS_Store
+
+# Alembic caches (keep migrations!)
+alembic/__pycache__/
+
+# Local app logs
 logs/
